@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="chall1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="avatar-jessica.jpeg" alt="Profile Picture" class="profile-image">
+            <h2 class="name">Jessica Randall</h2>
+            <p class="location">London, United Kingdom</p>
+            <p class="bio">"Front-end developer and avid reader."</p>
+            <div class="links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Frontend Mentor</a>
+                <a href="#" class="btn">LinkedIn</a>
+                <a href="#" class="btn">Twitter</a>
+                <a href="#" class="btn">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".btn");
+    
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            alert(`Opening ${this.innerText}...`);
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
